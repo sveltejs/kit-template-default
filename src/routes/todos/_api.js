@@ -11,14 +11,14 @@
 
 const base = 'https://api.svelte.dev';
 
-export async function api(event, resource, data) {
+export async function api(request, resource, data) {
 	// user must have a cookie set
-	if (!event.locals.userid) {
+	if (!request.locals.userid) {
 		return { status: 401 };
 	}
 
 	const res = await fetch(`${base}/${resource}`, {
-		method: event.request.method,
+		method: request.method,
 		headers: {
 			'content-type': 'application/json'
 		},
@@ -29,11 +29,7 @@ export async function api(event, resource, data) {
 	// behaviour is to show the URL corresponding to the form's "action"
 	// attribute. in those cases, we want to redirect them back to the
 	// /todos page, rather than showing the response
-	if (
-		res.ok &&
-		event.request.method !== 'GET' &&
-		event.request.headers.get('accept') !== 'application/json'
-	) {
+	if (res.ok && request.method !== 'GET' && request.headers.accept !== 'application/json') {
 		return {
 			status: 303,
 			headers: {

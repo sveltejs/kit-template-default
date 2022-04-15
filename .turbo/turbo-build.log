@@ -1,0 +1,53 @@
+default-template:build: cache hit, replaying output 13744197339b8a40
+default-template:build: 
+default-template:build: > default-template@0.0.2-next.0 build /home/runner/work/kit/kit/packages/create-svelte/templates/default
+default-template:build: > svelte-kit build --verbose
+default-template:build: 
+default-template:build: [36mvite v2.9.0 [32mbuilding for production...[36m[39m
+default-template:build: transforming...
+default-template:build: [32m✓[39m 34 modules transformed.
+default-template:build: rendering chunks...
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32massets/svelte-logo-87df40b8.svg                          [39m [2m1.85 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32massets/fira-mono-cyrillic-ext-400-normal-b3140dd3.woff2  [39m [2m16.11 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32massets/fira-mono-cyrillic-400-normal-046b609f.woff2      [39m [2m9.08 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32massets/fira-mono-greek-ext-400-normal-8659ae46.woff2     [39m [2m7.85 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32massets/fira-mono-greek-400-normal-1f8b3a07.woff2         [39m [2m10.48 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32massets/fira-mono-latin-ext-400-normal-b6331a25.woff2     [39m [2m11.84 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32massets/fira-mono-latin-400-normal-a2f9dbe8.woff2         [39m [2m16.44 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32massets/fira-mono-all-400-normal-0d19eb5d.woff            [39m [2m75.54 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[32mmanifest.json                                            [39m [2m2.67 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36mstart-f9e4684f.js                                        [39m [2m23.16 KiB / gzip: 8.63 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36mpages/__layout.svelte-945d1c43.js                        [39m [2m4.76 KiB / gzip: 1.86 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36merror.svelte-e5ce752e.js                                 [39m [2m1.56 KiB / gzip: 0.75 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36mpages/about.svelte-63849c89.js                           [39m [2m2.37 KiB / gzip: 1.09 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36mpages/index.svelte-03c227eb.js                           [39m [2m5.34 KiB / gzip: 2.33 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36mpages/todos/index.svelte-e2216d21.js                     [39m [2m6.72 KiB / gzip: 2.81 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36mchunks/index-a86366ca.js                                 [39m [2m11.76 KiB / gzip: 4.97 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36mchunks/index-52fd4d8e.js                                 [39m [2m0.43 KiB / gzip: 0.31 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[36mchunks/singletons-d1fb5791.js                            [39m [2m0.05 KiB / gzip: 0.07 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[35massets/pages/__layout.svelte-a7861b78.css                [39m [2m4.96 KiB / gzip: 1.55 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[35massets/pages/about.svelte-bf4528fa.css                   [39m [2m0.11 KiB / gzip: 0.10 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[35massets/pages/todos/index.svelte-a910a02d.css             [39m [2m3.70 KiB / gzip: 1.03 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/client/_app/[22m[90m[39m[35massets/pages/index.svelte-d0605c9c.css                   [39m [2m1.43 KiB / gzip: 0.51 KiB[22m
+default-template:build: [36mvite v2.9.0 [32mbuilding SSR bundle for production...[36m[39m
+default-template:build: transforming...
+default-template:build: [32m✓[39m 35 modules transformed.
+default-template:build: rendering chunks...
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[32mmanifest.json                        [39m [2m2.33 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mindex.js                             [39m [2m65.73 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mentries/endpoints/todos/index.ts.js  [39m [2m1.33 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mentries/pages/__layout.svelte.js     [39m [2m4.60 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mentries/fallbacks/error.svelte.js    [39m [2m0.72 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mentries/pages/about.svelte.js        [39m [2m1.29 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mentries/pages/index.svelte.js        [39m [2m8.09 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mentries/pages/todos/index.svelte.js  [39m [2m5.82 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mchunks/index-ad4fdd88.js             [39m [2m3.82 KiB[22m
+default-template:build: [90m[37m[2m.svelte-kit/output/server/[22m[90m[39m[36mchunks/hooks-87fb94fd.js             [39m [2m0.47 KiB[22m
+default-template:build:   200 /
+default-template:build:   200 /about
+default-template:build: 
+default-template:build: Run npm run preview to preview your production build locally.
+default-template:build: 
+default-template:build: > Using @sveltejs/adapter-auto
+default-template:build:   Could not detect a supported production environment. See https://kit.svelte.dev/docs/adapters to learn how to configure your app to run on the platform of your choosing
+default-template:build:   ✔ done

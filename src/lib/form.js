@@ -37,7 +37,7 @@ export function enhance(form, { pending, error, result } = {}) {
 				console.error(await response.text());
 			}
 		} catch (e) {
-			if (error) {
+			if (error && e instanceof Error) {
 				error({ data, form, error: e, response: null });
 			} else {
 				throw e;

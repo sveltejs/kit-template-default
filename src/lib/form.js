@@ -2,9 +2,36 @@ import { invalidate } from '$app/navigation';
 
 // this action (https://svelte.dev/tutorial/actions) allows us to
 // progressively enhance a <form> that already works without JS
+/**
+ * @param {HTMLFormElement} form
+ * @param {{
+ *   pending?: ({ data, form }: { data: FormData; form: HTMLFormElement }) => void;
+ *   error?: ({
+ *     data,
+ *     form,
+ *     response,
+ *     error
+ *   }: {
+ *     data: FormData;
+ *     form: HTMLFormElement;
+ *     response: Response | null;
+ *     error: Error | null;
+ *   }) => void;
+ *   result?: ({
+ *     data,
+ *     form,
+ *     response
+ *   }: {
+ *     data: FormData;
+ *     response: Response;
+ *     form: HTMLFormElement;
+ *   }) => void;
+ * }} [opts]
+ */
 export function enhance(form, { pending, error, result } = {}) {
 	let current_token;
 
+	/** @param {SubmitEvent} e */
 	async function handle_submit(e) {
 		const token = (current_token = {});
 

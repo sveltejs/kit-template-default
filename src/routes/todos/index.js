@@ -1,6 +1,6 @@
 import { api } from './_api';
 
-/** @type {import('./index').RequestHandler} */
+/** @type {import('./__types').RequestHandler} */
 export const get = async ({ locals }) => {
 	// locals.userid comes from src/hooks.js
 	const response = await api('get', `todos/${locals.userid}`);

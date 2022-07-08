@@ -28,7 +28,7 @@ export const get = async ({ locals }) => {
 	};
 };
 
-/** @type {import('./index').RequestHandler} */
+/** @type {import('./__types').RequestHandler} */
 export const post = async ({ request, locals }) => {
 	const form = await request.formData();
 
@@ -48,7 +48,7 @@ const redirect = {
 	}
 };
 
-/** @type {import('./index').RequestHandler} */
+/** @type {import('./__types').RequestHandler} */
 export const patch = async ({ request, locals }) => {
 	const form = await request.formData();
 
@@ -60,7 +60,7 @@ export const patch = async ({ request, locals }) => {
 	return redirect;
 };
 
-/** @type {import('./index').RequestHandler} */
+/** @type {import('./__types').RequestHandler} */
 export const del = async ({ request, locals }) => {
 	const form = await request.formData();
 

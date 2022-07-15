@@ -1,7 +1,7 @@
 import { api } from './_api';
 
 /** @type {import('./__types').RequestHandler} */
-export const get = async ({ locals }) => {
+export const GET = async ({ locals }) => {
 	// locals.userid comes from src/hooks.js
 	const response = await api('GET', `todos/${locals.userid}`);
 
@@ -29,7 +29,7 @@ export const get = async ({ locals }) => {
 };
 
 /** @type {import('./__types').RequestHandler} */
-export const post = async ({ request, locals }) => {
+export const POST = async ({ request, locals }) => {
 	const form = await request.formData();
 
 	await api('POST', `todos/${locals.userid}`, {
@@ -49,7 +49,7 @@ const redirect = {
 };
 
 /** @type {import('./__types').RequestHandler} */
-export const patch = async ({ request, locals }) => {
+export const PATCH = async ({ request, locals }) => {
 	const form = await request.formData();
 
 	await api('PATCH', `todos/${locals.userid}/${form.get('uid')}`, {
@@ -61,7 +61,7 @@ export const patch = async ({ request, locals }) => {
 };
 
 /** @type {import('./__types').RequestHandler} */
-export const del = async ({ request, locals }) => {
+export const DELETE = async ({ request, locals }) => {
 	const form = await request.formData();
 
 	await api('DELETE', `todos/${locals.userid}/${form.get('uid')}`);

@@ -57,7 +57,7 @@ export function enhance(form, { pending, error, result } = {}) {
 
 				const url = new URL(form.action);
 				url.search = url.hash = '';
-				invalidate(url.href);
+				invalidate();
 			} else if (error) {
 				error({ data, form, error: null, response });
 			} else {

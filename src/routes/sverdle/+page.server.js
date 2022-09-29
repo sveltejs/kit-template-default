@@ -1,5 +1,5 @@
 import { invalid } from '@sveltejs/kit';
-import { answers, allowed } from './words.server';
+import { words, allowed } from './words.server';
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = ({ cookies }) => {
@@ -82,12 +82,12 @@ class Game {
 			this.guesses = guesses ? guesses.split(' ') : [];
 			this.answers = answers ? answers.split(' ') : [];
 		} else {
-			this.index = Math.floor(Math.random() * answers.length);
+			this.index = Math.floor(Math.random() * words.length);
 			this.guesses = ['', '', '', '', '', ''];
 			this.answers = /** @type {string[]} */ ([]);
 		}
 
-		this.answer = answers[this.index];
+		this.answer = words[this.index];
 	}
 
 	/**
